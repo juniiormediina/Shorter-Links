@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/43ba610cc0.js" crossorigin="anonymous"></script>
     <title>Shortly</title>
 </head>
 <body>
     <header>
         <div class="header-icon-menu">
-            <a href="#"><h1>Shortly</h1></a>
+            <a href="#"><img src="/images/logo.svg" alt=""></a>
+        </div>
+        
+        <div class="fullMenu" id="fullMenu">
             <nav>
                 <ul>
                     <li>Features</li>
                     <li>Pricing</li>
                     <li>Resources</li>
                 </ul>
+                <div class="header-button">
+                    <button>Login</button>
+                    <button class="sing-up">Sing Up</button>
+                </div>
             </nav>
         </div>
 
-        <div class="header-button">
-            <button>Login</button>
-            <button>Sing Up</button>
+        <div class="btn-full-menu">
+            <i id="btnFullMenu" class="fas fa-bars"></i>
         </div>
+
     </header>
 
     <main>
@@ -36,6 +48,7 @@
                 <button>Get Started</button>
             </div>
         </section>
+
         <section class="shorten-section">
             <div class="container">
                 <input type="text" placeholder="Shorten a link here...">
@@ -43,10 +56,40 @@
                 <button>Shorten It!</button>
             </div>
         </section>
+
         <section class="statistics-section">
             <h2>Advanced Statistics</h2>
             <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
         </section>
+
+        <section class="cards-section">
+            <div class="cards-container">
+                <div class="card-content">
+                    <div class="card-icon-container">
+                        <img src="/images/icon-brand-recognition.svg" alt="">
+                    </div>
+                    <h2>Brand Recognition</h2>
+                    <p>Boost your brand recognition with each click. Generic links don´t mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="bar-connection"></div>
+                <div class="card-content">
+                    <div class="card-icon-container">
+                        <img src="/images/icon-detailed-records.svg" alt="">
+                    </div>
+                    <h2>Detailed Records</h2>
+                    <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                </div>
+                <div class="bar-connection"></div>
+                <div class="card-content">
+                    <div class="card-icon-container">
+                        <img src="/images/icon-fully-customizable.svg" alt="">
+                    </div>
+                    <h2>Fully Customizable</h2>
+                    <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="boost-section">
             <p>Boost your links today</p>
             <button>Get Started</button>
@@ -77,12 +120,20 @@
             <a href="#">Contact</a>
         </div>
         <div class="social">
-            <img src="/images/icon-facebook.svg" alt="facebook">
-            <img src="/images/icon-twitter.svg" alt="twitter">
-            <img src="/images/icon-pinterest.svg" alt="pinterest">
-            <img src="/images/icon-instagram.svg" alt="instagram">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="/images/icon-facebook.svg" alt="facebook">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="/images/icon-twitter.svg" alt="twitter">
+            </a>
+            <a href="https://co.pinterest.com/" target="_blank">
+                <img src="/images/icon-pinterest.svg" alt="pinterest">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="/images/icon-instagram.svg" alt="instagram">
+            </a>
         </div>
     </footer>
-    
+    <script src="/scripts/main.js"></script>
 </body>
 </html>

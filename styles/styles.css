@@ -1,17 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
-header .header-icon-menu {
-  /* display: flex; */
+header {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
 }
 
 header .header-icon-menu a {
@@ -20,12 +30,99 @@ header .header-icon-menu a {
   font-size: 20px;
 }
 
-header .header-icon-menu nav {
-  display: none;
+header .fullMenu {
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header .header-button {
-  display: none;
+header .fullMenu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  width: 330px;
+  background: #0c1329;
+  border-radius: 10px;
+}
+
+header .fullMenu nav ul li {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  list-style: none;
+}
+
+header .fullMenu nav ul ::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 295px;
+  height: 1px;
+  background: #ffffff;
+  bottom: 166px;
+  left: 41px;
+}
+
+header .fullMenu nav .header-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-bottom: 2rem;
+}
+
+header .fullMenu nav .header-button button {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+}
+
+header .fullMenu nav .header-button :focus {
+  outline: none;
+}
+
+header .fullMenu nav .header-button .sing-up {
+  background: #2BD0D0;
+  border: 1px solid #2BD0D0;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+header .btn-full-menu {
+  font-size: 20px;
+  color: grey;
 }
 
 main .principal-section {
@@ -73,6 +170,7 @@ main .principal-section .principal-description button {
   width: 185px;
   color: #ffffff;
   font-size: 16px;
+  cursor: pointer;
 }
 
 main .shorten-section {
@@ -153,6 +251,7 @@ main .shorten-section .container button {
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 main .statistics-section {
@@ -167,6 +266,7 @@ main .statistics-section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background: #ddddddb4;
 }
 
 main .statistics-section h2 {
@@ -182,8 +282,88 @@ main .statistics-section p {
   width: 309px;
 }
 
+main .cards-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #ddddddb4;
+  height: 1100px;
+}
+
+main .cards-section .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cards-section .cards-container .card-content {
+  height: 250px;
+  width: 325px;
+  border-radius: 5px;
+  margin-top: 90px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cards-section .cards-container .card-content .card-icon-container {
+  background: #361c3b;
+  height: 80px;
+  width: 80px;
+  margin-top: -40px;
+  border-radius: 50px;
+}
+
+main .cards-section .cards-container .card-content .card-icon-container img {
+  width: 80px;
+  padding: 20px;
+}
+
+main .cards-section .cards-container .card-content h2 {
+  margin-top: 15px;
+  font-weight: 900;
+}
+
+main .cards-section .cards-container .card-content p {
+  margin-top: 20px;
+  width: 257px;
+  color: #a2a2aa;
+  font-weight: bold;
+}
+
+main .cards-section .cards-container .bar-connection {
+  background: #2BD0D0;
+  width: 10px;
+  height: 50px;
+  margin-bottom: -50px;
+}
+
 main .boost-section {
-  margin-top: 2rem;
   background-image: url(../images/bg-boost-mobile.svg);
   background-color: #3e3161;
   height: 270px;
@@ -223,6 +403,7 @@ main .boost-section button {
   font-weight: 700;
   width: 200px;
   margin-top: -50px;
+  cursor: pointer;
 }
 
 footer {
@@ -244,7 +425,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  height: 600px;
+  height: 640px;
 }
 
 footer .footer-title h2 {
@@ -277,6 +458,7 @@ footer .features a {
   text-decoration: none;
   color: #ffffff;
   margin: 5px;
+  cursor: pointer;
 }
 
 footer .resources {
@@ -305,6 +487,7 @@ footer .resources a {
   text-decoration: none;
   color: #ffffff;
   margin: 5px;
+  cursor: pointer;
 }
 
 footer .company {
@@ -333,6 +516,7 @@ footer .company a {
   text-decoration: none;
   color: #ffffff;
   margin: 5px;
+  cursor: pointer;
 }
 
 footer .social {
@@ -342,5 +526,6 @@ footer .social {
 
 footer .social img {
   margin: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

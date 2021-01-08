@@ -32,12 +32,14 @@ main{
                 width: 185px;
                 color: #ffffff;
                 font-size: 16px;
+                cursor: pointer;
             }
         }
     }
     .shorten-section{
         margin-top: 2rem;
         padding: 20px;
+        // background: #ddddddb4;
         .container{
             background-image: url(../images/bg-shorten-mobile.svg);
             background-color: #3e3161;
@@ -81,6 +83,7 @@ main{
                 color: #ffffff;
                 font-size: 20px;
                 font-weight: 700;
+                cursor: pointer;
             }
         }
     }
@@ -89,6 +92,10 @@ main{
         flex-flow: column;
         align-items: center;
         text-align: center;
+        background: #ddddddb4;
+
+        // margin-top: -110px;
+        // padding-top: 150px;
         h2{
             font-size: 37px;
             height: 38px;
@@ -97,12 +104,62 @@ main{
             margin-top: 10px;
             font-size: 18px;
             line-height: 25px;
-            color: #a2a2aa;
+            color:#a2a2aa;
             width: 309px;
         }
     }
+    .cards-section{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        background: #ddddddb4;
+        height: 1100px;
+        .cards-container{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+            .card-content{
+                height: 250px;
+                width: 325px;
+                border-radius: 5px;
+                margin-top: 90px;
+                background: #ffffff;
+                box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                .card-icon-container{
+                    background: #361c3b;
+                    height: 80px;
+                    width: 80px;
+                    margin-top: -40px;
+                    border-radius: 50px;
+                    img{
+                        width: 80px;
+                        padding: 20px;
+                    }
+                }
+                h2{
+                    margin-top: 15px;
+                    font-weight: 900;
+                }
+                p{
+                    margin-top: 20px;
+                    width: 257px;
+                    color: #a2a2aa;
+                    font-weight: bold;
+                }
+            }
+            .bar-connection{
+                background: #2BD0D0;
+                width: 10px;
+                height: 50px;
+                margin-bottom: -50px;
+            }
+        }
+    }
     .boost-section{
-        margin-top: 2rem;
         background-image: url(../images/bg-boost-mobile.svg);
         background-color: #3e3161;
         height: 270px;
@@ -130,6 +187,7 @@ main{
             font-weight: 700;
             width: 200px;
             margin-top: -50px;
+            cursor: pointer;
         }
     }
 }
