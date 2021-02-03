@@ -1,0 +1,83 @@
+header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 80px;
+  .header-icon-menu {
+    margin-top: 13px;
+    a {
+      text-decoration: none;
+      color: $ninth-color;
+      font-size: 20px;
+    }
+  }
+  .fullMenu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    nav {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 20px;
+      width: 330px;
+      background: $seventh-color;
+      border-radius: 10px;
+      ul {
+        li {
+          text-align: center;
+          color: $eighth-color;
+          font-size: 20px;
+          font-weight: 700;
+          padding: 20px;
+          list-style: none;
+        }
+        ::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 295px;
+          height: 1px;
+          background: $eighth-color;
+          bottom: 166px;
+          left: 41px;
+        }
+      }
+      .header-button {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 2rem;
+        button {
+          color: $eighth-color;
+          font-size: 20px;
+          font-weight: 700;
+          padding: 20px;
+          text-decoration: none;
+          background: transparent;
+          border: none;
+        }
+        :focus {
+          outline: none;
+        }
+        .sing-up {
+          background: $principal-color;
+          border: 1px solid $principal-color;
+          border-radius: 50px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .btn-full-menu {
+    font-size: 20px;
+    color: $third-color;
+  }
+}

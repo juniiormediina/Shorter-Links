@@ -1,0 +1,193 @@
+main {
+  .principal-section {
+    text-align: center;
+    .img-container {
+      img {
+        width: 367px;
+        height: 363px;
+      }
+    }
+    .principal-description {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin-top: 2rem;
+      h2 {
+        font-size: 37px;
+        max-width: 90%;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        color: $third-color;
+        width: 263px;
+      }
+      button {
+        margin-top: 20px;
+        background: $principal-color;
+        border: 1px solid $principal-color;
+        border-radius: 50px;
+        padding: 15px;
+        width: 185px;
+        color: $eighth-color;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+  .shorten-section {
+    margin-top: 7rem;
+    padding: 20px;
+    background: $fifth-color;
+    .container {
+      margin-top: -6.6rem;
+      background-image: url(../images/bg-shorten-mobile.svg);
+      background-color: $secondary-color;
+      height: 180px;
+      display: flex;
+      flex-flow: column;
+      padding: 20px;
+      text-align: center;
+      justify-content: space-around;
+      background-position: top;
+      background-position-x: right;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      input {
+        height: 46px;
+        border-radius: 5px;
+        border: none;
+        padding-left: 15px;
+      }
+      ::placeholder {
+        color: $third-color;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      :focus {
+        outline-style: revert;
+        outline-color: $sixth-color;
+        padding-left: 15px;
+      }
+      /* p {
+        visibility: hidden;
+        color: $sixth-color;
+        text-align: left;
+        margin-top: -11px;
+      } */
+      button {
+        background: $principal-color;
+        border: 1px solid $principal-color;
+        border-radius: 5px;
+        padding: 10px;
+        color: $eighth-color;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+  .statistics-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    background: $fifth-color;
+    h2 {
+      font-size: 37px;
+      height: 38px;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 25px;
+      color: $third-color;
+      width: 309px;
+      font-weight: 500;
+    }
+  }
+  .cards-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    background: $fifth-color;
+    height: 1100px;
+    .cards-container {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      .card-content {
+        height: 250px;
+        width: 325px;
+        border-radius: 5px;
+        margin-top: 90px;
+        background: $eighth-color;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .card-icon-container {
+          background: $secondary-color;
+          height: 80px;
+          width: 80px;
+          margin-top: -40px;
+          border-radius: 50px;
+          img {
+            width: 80px;
+            padding: 20px;
+          }
+        }
+        h2 {
+          margin-top: 15px;
+          font-weight: 900;
+        }
+        p {
+          margin-top: 20px;
+          width: 257px;
+          color: $third-color;
+          font-weight: bold;
+        }
+      }
+
+      .bar-connection {
+        background: $principal-color;
+        width: 10px;
+        height: 50px;
+        margin-bottom: -50px;
+      }
+    }
+  }
+  .boost-section {
+    background-image: url(../images/bg-boost-mobile.svg);
+    background-color: $secondary-color;
+    height: 270px;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    background-position: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    align-items: center;
+    p {
+      color: $eighth-color;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    button {
+      background: $principal-color;
+      border: 1px solid $principal-color;
+      border-radius: 50px;
+      padding: 10px;
+      color: $eighth-color;
+      font-size: 20px;
+      font-weight: 700;
+      width: 200px;
+      margin-top: -50px;
+      cursor: pointer;
+    }
+  }
+}

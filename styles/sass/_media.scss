@@ -1,0 +1,219 @@
+@media screen and (min-width: 768px) {
+  header {
+    .fullMenu {
+      nav {
+        ul {
+          ::after {
+            left: 236px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .principal-section {
+      display: flex;
+      .img-container {
+        margin-left: 40px;
+      }
+      .principal-description {
+        margin-left: -80px;
+      }
+    }
+    .shorten-section {
+      .container {
+        margin-top: -4.5rem;
+        height: 110px;
+        flex-flow: row wrap;
+        align-items: center;
+        input {
+          height: 52px;
+          width: 450px;
+        }
+        button {
+          width: 200px;
+        }
+      }
+    }
+    .boost-section {
+      height: 252px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    margin: 20px 40px 10px 40px;
+    .fullMenu {
+      position: inherit;
+      margin-top: initial;
+      flex-flow: row nowrap;
+      nav {
+        background: none;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        width: 100%;
+        ul {
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+          width: 360px;
+          justify-content: space-evenly;
+          li {
+            padding: 0px;
+            color: $ninth-color;
+            font-size: 18px;
+          }
+          ::after {
+            content: none;
+          }
+          :hover {
+            font-weight: bold;
+            font-size: 19px;
+          }
+        }
+        .header-button {
+          flex-flow: row nowrap;
+          margin-bottom: initial;
+          button {
+            color: $ninth-color;
+            font-size: 18px;
+            padding: 10px;
+          }
+          .sing-up {
+            width: 141px;
+            padding: 0px;
+            color: $eighth-color;
+          }
+        }
+      }
+    }
+    .btn-full-menu {
+      display: none;
+    }
+  }
+  main {
+    .principal-section {
+      display: flex;
+      flex-flow: row-reverse;
+      justify-content: center;
+      .img-container {
+        margin-left: initial;
+        img {
+          width: 525px;
+          height: 482px;
+        }
+      }
+      .principal-description {
+        margin-left: initial;
+        padding: 31px 0px 0px 78px;
+        h2 {
+          font-size: 58px;
+          max-width: initial;
+          text-align: start;
+        }
+        p {
+          margin-top: initial;
+          text-align: start;
+          line-height: initial;
+          width: initial;
+        }
+      }
+    }
+    .shorten-section {
+      padding: 20px 80px 21px 80px;
+      .container {
+        background-image: url(../../images/bg-shorten-desktop.svg);
+        margin-top: -5.5rem;
+        height: 135px;
+        input {
+          width: 560px;
+        }
+      }
+    }
+    .statistics-section {
+      padding: 30px 0px 30px 0px;
+      p {
+        margin-top: 20px;
+        width: 480px;
+      }
+    }
+    .cards-section {
+      height: 470px;
+      text-align: initial;
+      .cards-container {
+        flex-flow: row;
+        height: 390px;
+        .card-content {
+          .card-icon-container {
+            margin-left: -190px;
+          }
+          h2 {
+            margin-left: -30px;
+          }
+        }
+        .margin-card-1 {
+          margin-top: 0px;
+        }
+        .margin-card-2 {
+          margin-top: 100px;
+        }
+        .margin-card-3 {
+          margin-top: 200px;
+        }
+        .bar-connection {
+          width: 20px;
+          height: 10px;
+        }
+      }
+    }
+    .boost-section {
+      background-image: url(../../images/bg-boost-desktop.svg);
+      height: 250px;
+    }
+  }
+  footer {
+    height: 220px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header {
+    margin: 20px 75px 20px 75px;
+  }
+  main {
+    .principal-section {
+      .principal-description {
+        padding: 31px 20px 0px 117px;
+      }
+    }
+    .shorten-section {
+      padding: 20px 115px 21px 115px;
+      .container {
+        input {
+          width: 760px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    .principal-section {
+      justify-content: space-between;
+      .principal-description {
+        h2 {
+          font-size: 60px;
+        }
+      }
+    }
+    .shorten-section {
+      .container {
+        input {
+          width: 920px;
+        }
+      }
+    }
+  }
+}
